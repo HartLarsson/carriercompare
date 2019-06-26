@@ -140,7 +140,7 @@ function updateCarriersList()
                     $.each(json, function(index, carrier)
                     {
                         html += '<tr class="'+(index % 2 ? 'alternate_' : '')+'item">'+
-                                    '<td class="" width="64px">'+
+                                    '<td class="carrier_action" width="64px">'+
                                         '&nbsp; <input type="radio" name="carrier_id" value="'+ carrier.id_carrier +'" id="id_carrier'+carrier.id_carrier+'" '+(id_carrier == carrier.id_carrier ? 'checked="checked"' : '')+'/>'+
                                     '</td>'+
                                     '<td class="carrier_name">'+
